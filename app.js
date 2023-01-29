@@ -56,8 +56,8 @@ const cardArray = [
     img: 'images/Soudure.png'
   },
   {
-    name: 'Squellette_de_baleine',
-    img: 'images/Squellette_de_baleine.png'
+    name: 'Squelette_de_baleine',
+    img: 'images/Squelette_baleine.png'
   },
   {
     name: 'Vallee_des_temples',
@@ -72,12 +72,12 @@ const cardArray = [
     img: 'images/Yoga.png'
   },
   {
-    name: 'Back',
-    img: 'images/Back.png'
+    name: 'Humour',
+    img: 'images/Humour.png'
   },
   {
-    name: 'Back_2',
-    img: 'images/19.png'
+    name: 'Aïnu',
+    img: 'images/ainu.png'
   },
   {
     name: 'arbre_nelbi',
@@ -136,8 +136,8 @@ const cardArray = [
     img: 'images/Soudure.png'
   },
   {
-    name: 'Squellette_de_baleine',
-    img: 'images/Squellette_de_baleine.png'
+    name: 'Squelette_baleine',
+    img: 'images/Squelette_baleine.png'
   },
   {
     name: 'Vallee_des_temples',
@@ -173,7 +173,9 @@ const cardArray = [
 cardArray.sort(() => 0.5 - Math.random())
 
 const gridDisplay = document.querySelector('#grid')
-const cardsChosen = []
+let cardsChosen = []
+let cardsChosenIds = []
+const cardsWon = []
 
 function createBoard() {
   for (let i = 0; i < cardArray.length; i++) {
@@ -189,18 +191,41 @@ createBoard()
 
 function checkForMatch() {
   const cards = document.querySelectorAll('img')
+  const optionOneId = cardsChosenIds[0]
+  const optionTwoId = cardsChosenIds[1]
 
   console.log('checkForMatch !')
-  if (cardsChosen[0] === cardsChosen[1]) {
-    alert('You found a match')
+  if (optionOneId == optionTwoId) {
+    alert('Vous avez cliqué sur la même carte !')
+  }
+  if (cardsChosen[0] == cardsChosen[1]) {
+    alert('Vous avez trouvé une paire !')
+    cards[optionOneId].setAttribute('src', 'images/white.png')
+    cards[optionTwoId].setAttribute('src', 'images/white.png')
+    cards[optionOneId].removeEventListener('click', flipCard)
+    cards[optionTwoId].removeEventListener('click', flipCard)
+    cardsWon.push(cardsChosen)
+  }
+  else {
+    cards[optionOneId].setAttribute('src', 'images/back.png')
+    cards[optionTwoId].setAttribute('src', 'images/back.png')
+  }
+  cardsChosen = []
+  cardsChosenIds = []
+
+  if (cardsWon.length == cardArray.length / 2) {
+    alert('Bravo ! Vous avez gagné !')
   }
 }
 
 function flipCard () {
   const cardId = this.getAttribute('data-id')
   cardsChosen.push(cardArray[cardId].name)
+  cardsChosenIds.push(cardId)
+  console.log(cardsChosen)
+  console.log(cardsChosenIds)
   this.setAttribute('src', cardArray[cardId].img)
   if (cardsChosen.length === 2) {
-    setTimeout(checkForMatch, 500)
+    setTimeout(checkForMatch, 1500)
   }
 }
