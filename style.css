@@ -11,26 +11,18 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  max-width: 1500px;
-  max-height: 600px;
+  translate: -50% -50%;
+  width: 50%;
+  height: 50%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 999;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  border-radius: 10px;
-}
-
-#descrption {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
 }
 
 #modal-img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 70%;
+  max-height: 70%;
 }
 
 #modal.open {
