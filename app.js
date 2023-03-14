@@ -72,7 +72,7 @@ let cardArray = [
 
 let listArray = [
     {
-      name: 'Esprit d\'equipe',
+      name: 'Esprit d\'équipe',
       bigImg: 'big_images/1.png',
       description: '\'Il y a plus d\'idées dans deux têtes que dans une\'\n\n~ Jaques Chirac'
     },
@@ -92,7 +92,7 @@ let listArray = [
       description: 'Porte-bijou en laiton conçu dans la tête, et fabriqué, à la main 🤌'
     },
     {
-      name: 'Resolution de probleme',
+      name: 'Résolution de problème',
       bigImg: 'big_images/2.png',
       description: 'Recherche de solutions innovantes et efficaces pour la résolution de problèmes.'
     },
@@ -123,38 +123,38 @@ let listArray = [
     },
     {
       name: 'Louvre Abu Dhabi',
-      bigImg: 'images/LAD.png',
+      bigImg: 'big_images/13.png',
       description: '📸 du musée du Louvre Abu Dhabi prise lors d\'un chantier de soclage pour l\'exposition \'Dragons et phéonix\''
     },
     {
       name: 'Montagne',
-      bigImg: 'images/Montagne.png',
+      bigImg: 'big_images/17.png',
       description: '📸 prise en randonnée dans les Pyrénées Oriantales.\nLa montagne, ça vous gagne 🤓'
     },
     {
       name: 'Soudure',
-      bigImg: 'images/Soudure.png',
+      bigImg: 'big_images/soudure.png',
       description: 'Soudure de précision au PUK pour la fabrication de petit soclage'
     },
 
     {
-      name: 'Vallee_des_temples',
-      bigImg: 'images/Vallee_des_temples.png',
+      name: 'Aventure & Voyages',
+      bigImg: 'big_images/18.png',
       description: 'On aime l\'aventure et les voyages !\n📸prise à la vallée des temples en Sicile'
     },
     {
       name: 'Aïnu',
-      bigImg: 'images/ainu.png',
+      bigImg: 'big_images/ainu.png',
       description: 'Article paru dans le magazine\'The Good Life magazine\', photo prise au Musée Carnavalet lors de l\’installation de la collection permanente.'
     },
     {
       name: 'AutoCAD',
-      bigImg: 'images/AutoCAD.png',
+      bigImg: 'big_images/16.png',
       description: 'Plan d\'un meuble à rideau coulissant dessiné sur le logiciel de CAO/DAO Autocad'
     },
     {
       name: 'Banjo',
-      bigImg: 'images/Banjo.png',
+      bigImg: 'big_images/12.png',
       description: 'Adore la musique (🎶électronique, rock, jazz,...🎶)'
     },
     {
@@ -253,7 +253,7 @@ function flipCard () {
 
 // Populate the card list with the "name:" values
 listArray.forEach(card => {
-  const listItem = document.createElement('li');
+  const listItem = document.createElement('button');
   listItem.textContent = card.name;
   cardList.appendChild(listItem);
 
