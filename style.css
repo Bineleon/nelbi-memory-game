@@ -1,123 +1,289 @@
-#grid {
-  width: 750px;
-  height: 600px;
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: black;
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
 }
 
-.card-trip {
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+p {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
-.card-trip h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.card-trip p {
-  font-size: 12px;
-  opacity: .7;
-  margin: 0;
-}
-
-
-.card-trip .card-trip-infos {
-  padding: 40px;
+/* Navbar */
+nav {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #fff;
 }
 
-.card-trip-infos .card-trip-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
+nav .logo {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;;
 }
 
+nav ul {
+  display: flex;
+  align-items: center;
+}
 
-#modal {
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Grid */
+
+#memory-game {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Cards */
+.card {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+/* .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+} */
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.buttons button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid black;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 10px;
+  box-shadow:
+  5px 6px 0 0 black, /* inner border */
+  8px 9px 0px 0px white;
+}
+
+.buttons button:hover {
+  background-color: white;
+  color: black;
+  box-shadow:
+  0px 0px 0 0 black, /* inner border */
+  0px 0px 0px 0px white;
+  border: 4px, solid, white;
+  transition: ease 0.3s;
+}
+
+/* Modal */
+.modal {
   display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  width: 25%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 999;
   justify-content: center;
   align-items: center;
-}
-
-#modal-img {
-  width: 100%;
 }
 
 #modal.open {
   display: flex;
 }
 
-#close-btn {
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  position: relative;
+  text-align: center;
+}
+
+#modal-img {
+  width: 100%;
+}
+
+
+.close-container {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: white;
+  top: 15px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+.leftright {
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  margin-top: 20px;
+  background-color: black;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all .3s ease-in;
+}
+
+.rightleft {
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  margin-top: 20px;
+  background-color: black;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all .3s ease-in;
+}
+
+label{
   color: black;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: .4em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: all .3s ease-in;
+  opacity: 0;
+}
+
+.close {
+  margin: 30px 0 0 -13px;
+  position: absolute;
+}
+
+.close-container:hover .leftright{
+  transform: rotate(-45deg);
+  background-color: rgb(219, 92, 92);
+}
+.close-container:hover .rightleft{
+  transform: rotate(45deg);
+  background-color: rgb(219, 92, 92);
+}
+.close-container:hover label{
+  opacity: 1;
 }
 
 
-.full-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+
+@font-face {
+  font-family: 'Fligen';
+  src: url('Fligen-Regular.woff2') format('woff2'),
+      url('Fligen-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-.list-container {
-  width: 200px;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 40px;
+
+@media screen and (max-width: 600px) {
+  #memory-game {
+    grid-gap: 5px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 8px;
+    margin: 3px;
+  }
 }
 
-.card-list {
-  list-style: none;
-  margin: 10;
-  padding: 10;
+/* Media query pour les écrans moyens */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  #memory-game {
+    grid-gap: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+  }
 }
 
-.card-list li {
-  cursor: pointer;
-  margin-bottom: 10px;
-  font-size: 14px;
-  font-weight: bold;
-  color: blue;
-  text-decoration: underline;
-}
+/* Media query pour les grands écrans */
+@media screen and (min-width: 901px) {
+  #memory-game {
+    grid-gap: 15px;
+  }
 
-#name-list button {
-  display: block;
-  margin-bottom: 10px;
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+  img {
+    width: 100%;
+    height: auto;
+  }
 
-#name-list button:hover {
-  background-color: #0069d9;
+  .button {
+    font-size: 18px;
+    padding: 12px;
+    margin: 7px;
+  }
 }

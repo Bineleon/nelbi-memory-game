@@ -1,13 +1,12 @@
 const bonus = [
-{
-  name: 'BONUS, vous avez trouvé toute les pairs',
-  img: 'blue_images/Arbre_nelbi.png',
-  bigImg: 'big_images/14.png',
-  description: 'D\'où vient le prénom Nelbi ? C\'est à l\'origine le nom d\'un arbre sacré pour une tribu (les Peuls) au Mali. Il y a trois sortes de Nelbi : le Nelbi d\'eau, le Nelbi de terre et le Nelbi de nulle part 🤓'
-}
-]
+  {
+    name: 'BONUS, vous avez trouvé toute les pairs',
+    img: 'blue_images/Arbre_nelbi.png',
+    bigImg: 'big_images/14.png',
+    description: 'D\'où vient le prénom Nelbi ? C\'est à l\'origine le nom d\'un arbre sacré pour une tribu (les Peuls) au Mali. Il y a trois sortes de Nelbi : le Nelbi d\'eau, le Nelbi de terre et le Nelbi de nulle part 🤓'
+  }
+  ]
 let cardArray = [
-
   {
     name: 'Esprit d\'equipe',
     img: 'blue_images/Esprit_d_equipe.png',
@@ -23,7 +22,7 @@ let cardArray = [
   {
     name: 'Plongée',
     img: 'blue_images/Plongee.png',
-    bigImg: 'images/big_plongée.jpg',
+    bigImg: 'big_images/9.png',
     description: '📸 prise à Hawaii lors d\'un séjour plongée.\nTitulaire du PADI Open Water, pratique la plongée depuis plusieurs années. 🐳'
   },
   {
@@ -51,7 +50,7 @@ let cardArray = [
     description: '📸 prise lors du soclage d\'un squelette de baleine (actuellement exposé au Musée des Confluences, à Lyon)'
   },
   {
-    name: 'Velo',
+    name: 'Vélo',
     img: 'blue_images/Velo.png',
     bigImg: 'big_images/19.png',
     description: 'Le vélo, c\'est tout les jours, qu\'il vente ou qu\'il pleuve, court trajet, long trajet .\n🚴🏼‍♀️'
@@ -83,7 +82,7 @@ let listArray = [
     },
     {
       name: 'Plongée',
-      bigImg: 'images/big_plongée.jpg',
+      bigImg: 'big_images/9.png',
       description: '📸 prise à Hawaii lors d\'un séjour plongée.\nTitulaire du PADI Open Water, pratique la plongée depuis plusieurs années. 🐳'
     },
     {
@@ -167,9 +166,7 @@ let listArray = [
       bigImg: 'big_images/polyglotte.png',
       description: '\'Un esprit enfermé dans la langue est en prison.\'\n\n~ Simone Weil'
     }
-
   ]
-
 
 cardArray = [...cardArray, ...cardArray]
 
@@ -177,85 +174,86 @@ cardArray.sort(() => 0.5 - Math.random());
 
 const modal = document.querySelector('#modal');
 const modalImg = document.querySelector('#modal-img');
-const description = document.querySelector('#description');
+const description = document.querySelector('#modal-description');
 const closeBtn = document.querySelector('#close-btn');
-const gridDisplay = document.querySelector('#grid');
-const listContainer = document.querySelector('.list-container');
-const cardList = document.querySelector('.card-list');
-let cardsChosen = []
-let cardsChosenIds = []
-const cardsWon = []
+const gridDisplay = document.querySelector('#memory-game');
+const cardList = document.querySelector('.buttons');
+let cardsChosen = [];
+let cardsChosenIds = [];
+const cardsWon = [];
 
-closeBtn.addEventListener('click', function() {
+closeBtn.addEventListener('click', function () {
   modal.classList.remove('open');
 });
 
 function createBoard() {
   for (let i = 0; i < cardArray.length; i++) {
-    const card = document.createElement('img')
-    card.setAttribute('src', 'images/Back.png')
-    card.setAttribute('data-id', i)
-    gridDisplay.appendChild(card)
-    card.addEventListener('click', flipCard)
+    const card = document.createElement('img');
+    card.setAttribute('src', 'blue_images/back.png');
+    card.setAttribute('data-id', i);
+    gridDisplay.appendChild(card);
+    card.addEventListener('click', flipCard);
+    {
+      card.classList.toggle('is-flipped');
+    };
   }
 }
 
-createBoard()
+createBoard();
 
 function checkForMatch() {
-  const cards = document.querySelectorAll('img')
-  const optionOneId = cardsChosenIds[0]
-  const optionTwoId = cardsChosenIds[1]
+  const cards = document.querySelectorAll('img');
+  const optionOneId = cardsChosenIds[0];
+  const optionTwoId = cardsChosenIds[1];
 
-  console.log('checkForMatch !')
   if (optionOneId == optionTwoId) {
-    alert('Vous avez cliqué sur la même carte !')
+    alert('Vous avez cliqué sur la même carte !');
   }
   if (cardsChosen[0] == cardsChosen[1]) {
-    const card = cardArray[optionOneId]
+    const card = cardArray[optionOneId];
     document.querySelector('#modal-title').textContent = card.name;
     document.querySelector('#modal-description').textContent = card.description;
     document.querySelector('#modal-img').src = card.bigImg;
     modalImg.src = card.bigImg;
     modal.classList.add('open');
 
-    cards[optionOneId].setAttribute('src', 'images/white.png')
-    cards[optionTwoId].setAttribute('src', 'images/white.png')
-    cards[optionOneId].removeEventListener('click', flipCard)
-    cards[optionTwoId].removeEventListener('click', flipCard)
-    cardsWon.push(cardsChosen)
+    cards[optionOneId].setAttribute('src', 'blue_images/white.png');
+    cards[optionTwoId].setAttribute('src', 'blue_images/white.png');
+    cards[optionOneId].removeEventListener('click', flipCard);
+    cards[optionTwoId].removeEventListener('click', flipCard);
+    cardsWon.push(cardsChosen);
+  } else {
+    cards[optionOneId].setAttribute('src', 'blue_images/back.png');
+    cards[optionTwoId].setAttribute('src', 'blue_images/back.png');
   }
-  else {
-    cards[optionOneId].setAttribute('src', 'images/back.png')
-    cards[optionTwoId].setAttribute('src', 'images/back.png')
-  }
-  cardsChosen = []
-  cardsChosenIds = []
+  cardsChosen = [];
+  cardsChosenIds = [];
 
   if (cardsWon.length == cardArray.length / 2) {
-    alert('Bravo ! Vous avez gagné !')
+    document.querySelector('#modal-title').textContent = bonus[0].name;
+    document.querySelector('#modal-description').textContent = bonus[0].description;
+    document.querySelector('#modal-img').src = bonus[0].bigImg;
     modalImg.src = bonus[0].bigImg;
     modal.classList.add('open');
   }
 }
 
-function flipCard () {
-  const cardId = this.getAttribute('data-id')
-  cardsChosen.push(cardArray[cardId].name)
-  cardsChosenIds.push(cardId)
-  console.log(cardsChosen)
-  console.log(cardsChosenIds)
-  this.setAttribute('src', cardArray[cardId].img)
+function flipCard() {
+  const cardId = this.getAttribute('data-id');
+  cardsChosen.push(cardArray[cardId].name);
+  cardsChosenIds.push(cardId);
+  this.setAttribute('src', cardArray[cardId].img);
   if (cardsChosen.length === 2) {
-    setTimeout(checkForMatch, 1000)
+    setTimeout(checkForMatch, 1000);
   }
 }
 
 // Populate the card list with the "name:" values
-listArray.forEach(card => {
+listArray.forEach((card) => {
   const listItem = document.createElement('button');
   listItem.textContent = card.name;
-  cardList.appendChild(listItem);
+  const buttons = cardList.appendChild(listItem);
+  buttons.classList.add('button');
 
   // Add a click event listener to each list item to open the modal with the corresponding card
   listItem.addEventListener('click', () => {
