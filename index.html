@@ -11,14 +11,42 @@
   <body>
 
     <!-- Navbar -->
-    <nav>
-      <div class="logo"><bold>N L</bold></div>
-      <ul>
-        <li>
-          <a href="/contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <header id="navbar" class="cd-header">
+      <div class="header-wrapper">
+        <div class="logo-wrap">
+          <a href="https://www.linkedin.com/in/nelbi-leon/" class="hover-target" target="_blank"><span>NELBI</span>LEON</a>
+
+        </div>
+        <div class="nav-but-wrap">
+          <div class="menu-icon hover-target">
+            <span class="menu-icon__line menu-icon__line-left"></span>
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line menu-icon__line-right"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="nav">
+      <div class="nav__content">
+        <ul class="nav__list">
+          <li class="nav__list-item active-nav"><a href="/index.html" class="hover-target">home</a></li>
+          <li class="nav__list-item"><a href="/resume.html" class="hover-target">CV</a></li>
+          <li class="nav__list-item"><a href="/contact.html" class="hover-target">contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section full-height over-hide">
+      <div class="switch-wrap">
+        <h1>PLAY THE GAME</h1>
+        <p>Description du jeu</p>
+      </div>
+    </div>
+
+    <div class='cursor' id="cursor"></div>
+    <div class='cursor2' id="cursor2"></div>
+    <div class='cursor3' id="cursor3"></div>
 
     <!-- Game -->
     <div class="container">
@@ -31,20 +59,18 @@
     </div>
 
     <!-- modal -->
-    <div class="modal-bg">
-      <div class="modal" id="modal">
+    <div class="modal" id="modal">
         <div class="modal-content">
-          <div class="close-container" id="close-btn">
-            <div class="leftright"></div>
-            <div class="rightleft"></div>
-            <label class="close">close</label>
-          </div>
-          <img src="" alt="" id="modal-img" />
-          <h2 id="modal-title"></h2>
-          <p id="modal-description"></p>
+            <img src="" alt="" id="modal-img" />
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <p id="modal-description2"></p>
         </div>
+      <div class="close-container" id="close-btn">
+        <div class="leftright"></div>
+        <div class="rightleft"></div>
       </div>
-    </div>
+  </div>
 
     <script src="app.js"></script>
   </body>

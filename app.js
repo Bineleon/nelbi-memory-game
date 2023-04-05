@@ -1,170 +1,219 @@
 const bonus = [
   {
     name: 'BONUS, vous avez trouvé toute les pairs',
-    img: 'blue_images/Arbre_nelbi.png',
-    bigImg: 'big_images/14.png',
-    description: 'D\'où vient le prénom Nelbi ? C\'est à l\'origine le nom d\'un arbre sacré pour une tribu (les Peuls) au Mali. Il y a trois sortes de Nelbi : le Nelbi d\'eau, le Nelbi de terre et le Nelbi de nulle part 🤓'
+    img: 'images/arbre_nelbi.jpg',
+    description: 'D\'où vient le prénom Nelbi ? C\'est à l\'origine le nom d\'un arbre sacré pour une tribu (les Peuls) au Mali. Il y a trois sortes de Nelbi : le Nelbi d\'eau, le Nelbi de terre et le Nelbi de nulle part 🤓',
+    description2:' '
+
   }
   ]
 let cardArray = [
   {
     name: 'Esprit d\'equipe',
-    img: 'blue_images/Esprit_d_equipe.png',
-    bigImg: 'big_images/1.png',
-    description: '\'Il y a plus d\'idées dans deux têtes que dans une\'\n\n~ Jaques Chirac'
-  },
+    img: 'images/Esprit_d_equipe.jpg',
+    description: '\'Il y a plus d\'idées dans deux têtes que dans une\' ',
+    description2:'- Jaques Chirac -'
+  }
+  ,
   {
-    name: 'Perseverance',
-    img: 'blue_images/Perseverance.png',
-    bigImg: 'big_images/5.png',
-    description: 'En persévérant on arrive à tout.'
-  },
+    name: 'Persévérance',
+    img: 'images/Perseverance.jpg',
+    description: 'En persévérant on arrive à tout.',
+    description2:' '
+  }
+  ,
   {
     name: 'Plongée',
-    img: 'blue_images/Plongee.png',
-    bigImg: 'big_images/9.png',
-    description: '📸 prise à Hawaii lors d\'un séjour plongée.\nTitulaire du PADI Open Water, pratique la plongée depuis plusieurs années. 🐳'
-  },
+    img: 'images/plongee.jpg',
+    description: '📸 prise à Hawaii lors d\'un séjour plongée.\nTitulaire du PADI Open Water, pratique la plongée depuis plusieurs années. 🐳',
+    description2:' '
+  }
+  ,
   {
     name: 'Porte bijoux',
-    img: 'blue_images/Porte_bijoux.png',
-    bigImg: 'big_images/15.png',
-    description: 'Porte-bijou en laiton conçu dans la tête, et fabriqué, à la main 🤌'
-  },
+    img: 'images/Porte_bijoux.jpg',
+    description: 'Porte-bijou en laiton conçu dans la tête et fabriqué...à la main 🤌',
+    description2:' '
+  }
+  ,
   {
     name: 'Resolution de probleme',
-    img: 'blue_images/Resolution_de_probleme.png',
-    bigImg: 'big_images/2.png',
-    description: 'Recherche de solutions innovantes et efficaces pour la résolution de problèmes.'
-  },
+    img: 'images/Resolution_de_probleme.jpg',
+    description: 'Quand un problème se présente, il est transformé en défi à relever. 🔧🧩',
+    description2:' '
+  }
+  ,
   {
     name: 'Polyglotte',
-    img: 'blue_images/polyglotte.png',
-    bigImg: 'big_images/polyglotte.png',
-    description: '\'Un esprit enfermé dans la langue est en prison.\'\n\n~ Simone Weil'
-  },
+    img: 'images/polyglotte.jpg',
+    description: '\'Un esprit enfermé dans la langue est en prison.\' ',
+    description2:'- Simone Weil -'
+  }
+  ,
   {
     name: 'Squelette de baleine',
-    img: 'blue_images/Squelette_baleine.png',
-    bigImg: 'big_images/10.png',
-    description: '📸 prise lors du soclage d\'un squelette de baleine (actuellement exposé au Musée des Confluences, à Lyon)'
-  },
+    img: 'images/Squelette_baleine.jpg',
+    description: '📸 prise lors du soclage d\'un squelette de baleine (actuellement exposé au Musée des Confluences, à Lyon)',
+    description2:' '
+  }
+  ,
   {
     name: 'Vélo',
-    img: 'blue_images/Velo.png',
-    bigImg: 'big_images/19.png',
-    description: 'Le vélo, c\'est tout les jours, qu\'il vente ou qu\'il pleuve, court trajet, long trajet .\n🚴🏼‍♀️'
-  },
+    img: 'images/Velo.jpg',
+    description: 'Le vélo, c\'est tout les jours, qu\'il vente ou qu\'il pleuve, court trajet, long trajet .',
+    description2:'🚴🏼‍♀️'
+  }
+  ,
   {
     name: 'Yoga',
-    img: 'blue_images/Yoga.png',
-    bigImg: 'big_images/8.png',
-    description: 'Titulaire d\'un Teacher Training de 75H et pratique le yoga plusieurs fois par semaine 🧘‍♀️🤸‍♀️'
-  },
+    img: 'images/Yoga.jpg',
+    description: 'Titulaire d\'un Teacher Training de 75H et pratique le yoga plusieurs fois par semaine 🧘‍♀️🤸‍♀️',
+    description2:' '
+  }
+  ,
   {
     name: 'Humour & 2nd degré',
-    img: 'blue_images/Humour.png',
-    bigImg: 'big_images/6.png',
-    description: 'ERREUR 500'
-  },
+    img: 'images/Humour.jpg',
+    description: 'ERREUR 500',
+    description2:' '
+  }
+  ,
 ]
 
 let listArray = [
     {
       name: 'Esprit d\'équipe',
-      bigImg: 'big_images/1.png',
-      description: '\'Il y a plus d\'idées dans deux têtes que dans une\'\n\n~ Jaques Chirac'
-    },
+      img: 'images/esprit_d_equipe.jpg',
+      description: '\'Il y a plus d\'idées dans deux têtes que dans une\' ',
+      description2:'- Jaques Chirac -'
+    }
+    ,
     {
-      name: 'Perseverance',
-      bigImg: 'big_images/5.png',
-      description: 'En persévérant on arrive à tout.'
-    },
+      name: 'Persévérance',
+      img: 'images/perseverance.jpg',
+      description: 'En persévérant, on arrive à tout ! 🤓 ',
+      description2:' '
+    }
+    ,
     {
       name: 'Plongée',
-      bigImg: 'big_images/9.png',
-      description: '📸 prise à Hawaii lors d\'un séjour plongée.\nTitulaire du PADI Open Water, pratique la plongée depuis plusieurs années. 🐳'
-    },
+      img: 'images/plongee.jpg',
+      description: '📸 prise à Hawaii lors d\'un séjour plongée.',
+      description2:'Titulaire du PADI Open Water, pratique la plongée depuis plusieurs années. 🐳'
+    }
+    ,
     {
       name: 'Porte bijoux',
-      bigImg: 'big_images/15.png',
-      description: 'Porte-bijou en laiton conçu dans la tête, et fabriqué, à la main 🤌'
-    },
+      img: 'images/porte_bijoux.jpg',
+      description: 'Porte-bijou en laiton conçu dans la tête, et fabriqué...à la main 🤌',
+      description2:' '
+    }
+    ,
     {
       name: 'Résolution de problème',
-      bigImg: 'big_images/2.png',
-      description: 'Recherche de solutions innovantes et efficaces pour la résolution de problèmes.'
-    },
+      img: 'images/resolution_de_probleme.jpg',
+      description: 'Quand un problème se présente, il est transformé en défi à relever. 🔧 🧩',
+      description2:' '
+    }
+    ,
     {
       name: 'Sens de l\'optimisation',
-      bigImg: 'big_images/3.png',
-      description: 'Intérêt marqué dans la recherche de moyens pour rendre les processus plus efficaces et performants.'
-    },
+      img: 'images/sens_de_loptimisation.jpg',
+      description: 'Toujours à la recherche de la meilleure solution, l\'optimisation est mon leitmotiv. 💪 🚀',
+      description2:' '
+    }
+    ,
     {
       name: 'Squelette de baleine',
-      bigImg: 'big_images/10.png',
-      description: '📸 prise lors du soclage d\'un squelette de baleine (actuellement exposé au Musée des Confluences, à Lyon)'
-    },
+      img: 'images/squelette_baleine.jpg',
+      description: '📸 prise lors du soclage d\'un squelette de baleine (actuellement exposé au Musée des Confluences, à Lyon)',
+      description2:' '
+    }
+    ,
     {
-      name: 'Velo',
-      bigImg: 'big_images/19.png',
-      description: 'Le vélo, c\'est tout les jours, qu\'il vente ou qu\'il pleuve, court trajet, long trajet .\n🚴🏼‍♀️'
-    },
+      name: 'Vélo',
+      img: 'images/velo.jpg',
+      description: 'Le vélo, c\'est tout les jours, qu\'il vente ou qu\'il pleuve, court trajet, long trajet .\n🚴🏼‍♀️',
+      description2:' '
+    }
+    ,
     {
       name: 'Yoga',
-      bigImg: 'big_images/8.png',
-      description: 'Titulaire d\'un Teacher Training de 75H et pratique le yoga plusieurs fois par semaine 🧘‍♀️🤸‍♀️'
-    },
+      img: 'images/yoga.jpg',
+      description: 'Titulaire d\'un Teacher Training de 75H et pratique le yoga plusieurs fois par semaine 🧘‍♀️🤸‍♀️',
+      description2:' '
+    }
+    ,
     {
       name: 'Humour & 2nd degré',
-      bigImg: 'big_images/6.png',
-      description: 'ERREUR 500'
-    },
+      img: 'images/humour.jpg',
+      description: 'ERREUR 500',
+      description2:' '
+    }
+    ,
     {
       name: 'Louvre Abu Dhabi',
-      bigImg: 'big_images/13.png',
-      description: '📸 du musée du Louvre Abu Dhabi prise lors d\'un chantier de soclage pour l\'exposition \'Dragons et phéonix\''
-    },
+      img: 'images/LAD.jpg',
+      description: '📸 du musée du Louvre Abu Dhabi prise lors d\'un chantier de soclage pour l\'exposition \'Dragons et phéonix\' ',
+      description2:' '
+    }
+    ,
     {
       name: 'Montagne',
-      bigImg: 'big_images/17.png',
-      description: '📸 prise en randonnée dans les Pyrénées Oriantales.\nLa montagne, ça vous gagne 🤓'
-    },
+      img: 'images/montagne.jpg',
+      description: '📸 prise en randonnée dans les Pyrénées Oriantales.\nLa montagne, ça vous gagne 🤓',
+      description2:' '
+    }
+    ,
     {
       name: 'Soudure',
-      bigImg: 'big_images/soudure.png',
-      description: 'Soudure de précision au PUK pour la fabrication de petit soclage'
-    },
+      img: 'images/soudure.jpg',
+      description: 'Soudure de précision au PUK pour la fabrication de petit soclage',
+      description2:' '
+    }
+    ,
 
     {
       name: 'Aventure & Voyages',
-      bigImg: 'big_images/18.png',
-      description: 'On aime l\'aventure et les voyages !\n📸prise à la vallée des temples en Sicile'
-    },
+      img: 'images/vallee_des_temples.jpg',
+      description: 'On aime l\'aventure et les voyages !\n📸prise à la vallée des temples en Sicile',
+      description2:' '
+    }
+    ,
     {
       name: 'Aïnu',
-      bigImg: 'big_images/ainu.png',
-      description: 'Article paru dans le magazine\'The Good Life magazine\', photo prise au Musée Carnavalet lors de l\’installation de la collection permanente.'
-    },
+      img: 'images/ainu.jpg',
+      description: 'Article paru dans le magazine \'The Good Life magazine\', 📸 prise au Musée Carnavalet lors de l\’installation de la collection permanente.',
+      description2:' '
+    }
+    ,
     {
       name: 'AutoCAD',
-      bigImg: 'big_images/16.png',
-      description: 'Plan d\'un meuble à rideau coulissant dessiné sur le logiciel de CAO/DAO Autocad'
-    },
+      img: 'images/autoCAD.jpg',
+      description: 'Plan d\'un meuble à rideau coulissant dessiné sur le logiciel de CAO/DAO Autocad',
+      description2:' '
+    }
+    ,
     {
       name: 'Banjo',
-      bigImg: 'big_images/12.png',
-      description: 'Adore la musique (🎶électronique, rock, jazz,...🎶)'
-    },
+      img: 'images/banjo.jpg',
+      description: 'Adore la musique (🎶électronique, rock, jazz,...🎶)',
+      description2:' '
+    }
+    ,
     {
       name: 'Dessin bureau Art Déco',
-      bigImg: 'big_images/7.png',
-      description: 'Apprentissage, pour les diplômes d\'ébenisterie, du dessin, peinture et perspective ainsi que l\'histoire de l\'art et des styles.\nDessin au feutre et aquarelle d\'un \'Bureau de dames\'\nstyle Art Déco.'
-    },
+      img: 'images/dessin_bureau.jpg',
+      description: 'Apprentissage, pour les diplômes d\'ébenisterie, du dessin, peinture et perspective ainsi que l\'histoire de l\'art et des styles.\nDessin au feutre et aquarelle d\'un \'Bureau de dames\'\nstyle Art Déco.',
+      description2:' '
+    }
+    ,
     {
       name: 'Polyglotte',
-      bigImg: 'big_images/polyglotte.png',
-      description: '\'Un esprit enfermé dans la langue est en prison.\'\n\n~ Simone Weil'
+      img: 'images/polyglotte.jpg',
+      description: '\'Un esprit enfermé dans la langue est en prison.\'\n\n~ Simone Weil',
+      description2:' '
+
     }
   ]
 
@@ -175,6 +224,7 @@ cardArray.sort(() => 0.5 - Math.random());
 const modal = document.querySelector('#modal');
 const modalImg = document.querySelector('#modal-img');
 const description = document.querySelector('#modal-description');
+const description2 = document.querySelector('#modal-description2');
 const closeBtn = document.querySelector('#close-btn');
 const gridDisplay = document.querySelector('#memory-game');
 const cardList = document.querySelector('.buttons');
@@ -186,16 +236,14 @@ closeBtn.addEventListener('click', function () {
   modal.classList.remove('open');
 });
 
+
 function createBoard() {
   for (let i = 0; i < cardArray.length; i++) {
     const card = document.createElement('img');
-    card.setAttribute('src', 'blue_images/back.png');
+    card.setAttribute('src', 'images/back.png');
     card.setAttribute('data-id', i);
     gridDisplay.appendChild(card);
     card.addEventListener('click', flipCard);
-    {
-      card.classList.toggle('is-flipped');
-    };
   }
 }
 
@@ -213,18 +261,19 @@ function checkForMatch() {
     const card = cardArray[optionOneId];
     document.querySelector('#modal-title').textContent = card.name;
     document.querySelector('#modal-description').textContent = card.description;
-    document.querySelector('#modal-img').src = card.bigImg;
-    modalImg.src = card.bigImg;
+    document.querySelector('#modal-description2').textContent = card.description2;
+    document.querySelector('#modal-img').src = card.img;
+    modalImg.src = card.img;
     modal.classList.add('open');
 
-    cards[optionOneId].setAttribute('src', 'blue_images/white.png');
-    cards[optionTwoId].setAttribute('src', 'blue_images/white.png');
+    cards[optionOneId].setAttribute('src', 'images/white.png');
+    cards[optionTwoId].setAttribute('src', 'images/white.png');
     cards[optionOneId].removeEventListener('click', flipCard);
     cards[optionTwoId].removeEventListener('click', flipCard);
     cardsWon.push(cardsChosen);
   } else {
-    cards[optionOneId].setAttribute('src', 'blue_images/back.png');
-    cards[optionTwoId].setAttribute('src', 'blue_images/back.png');
+    cards[optionOneId].setAttribute('src', 'images/back.png');
+    cards[optionTwoId].setAttribute('src', 'images/back.png');
   }
   cardsChosen = [];
   cardsChosenIds = [];
@@ -232,14 +281,15 @@ function checkForMatch() {
   if (cardsWon.length == cardArray.length / 2) {
     document.querySelector('#modal-title').textContent = bonus[0].name;
     document.querySelector('#modal-description').textContent = bonus[0].description;
-    document.querySelector('#modal-img').src = bonus[0].bigImg;
-    modalImg.src = bonus[0].bigImg;
+    document.querySelector('#modal-img').src = bonus[0].img;
+    modalImg.src = bonus[0].img;
     modal.classList.add('open');
   }
 }
 
 function flipCard() {
   const cardId = this.getAttribute('data-id');
+
   cardsChosen.push(cardArray[cardId].name);
   cardsChosenIds.push(cardId);
   this.setAttribute('src', cardArray[cardId].img);
@@ -248,7 +298,6 @@ function flipCard() {
   }
 }
 
-// Populate the card list with the "name:" values
 listArray.forEach((card) => {
   const listItem = document.createElement('button');
   listItem.textContent = card.name;
@@ -257,20 +306,103 @@ listArray.forEach((card) => {
 
   // Add a click event listener to each list item to open the modal with the corresponding card
   listItem.addEventListener('click', () => {
-    openModal(card.bigImg, card.name, card.description);
+    openModal(card.img, card.name, card.description, card.description2);
   });
 });
 
 // Function to open the modal with the specified card information
-function openModal(imgSrc, title, description) {
+function openModal(imgSrc, title, description, description2) {
   const modal = document.querySelector('#modal');
   const modalImg = document.querySelector('#modal-img');
   const modalTitle = document.querySelector('#modal-title');
   const modalDescription = document.querySelector('#modal-description');
+  const modalDescription2 = document.querySelector('#modal-description2');
 
   modalImg.src = imgSrc;
   modalTitle.textContent = title;
   modalDescription.textContent = description;
+  modalDescription2.textContent = description2;
 
   modal.classList.add('open');
 }
+
+// Navbar
+
+const navbar = document.getElementById('navbar');
+const cursor = document.querySelector('.cursor');
+const cursor2 = document.querySelector('.cursor2');
+const cursor3 = document.querySelector('.cursor3');
+
+document.addEventListener('mousemove', (e) => {
+  const isCursorInNavbar = navbar.contains(e.target);
+
+  if (isCursorInNavbar) {
+    cursor.style.display = 'block';
+    cursor2.style.display = 'block';
+    cursor3.style.display = 'block';
+  } else {
+    cursor.style.display = 'none';
+    cursor2.style.display = 'none';
+    cursor3.style.display = 'none';
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  "use strict";
+
+  // Page cursors
+  const cursor = document.getElementById("cursor");
+  const cursor2 = document.getElementById("cursor2");
+  const cursor3 = document.getElementById("cursor3");
+
+  document.body.addEventListener("mousemove", function (event) {
+    cursor.style.left = event.clientX + "px";
+    cursor.style.top = event.clientY + "px";
+    cursor2.style.left = event.clientX + "px";
+    cursor2.style.top = event.clientY + "px";
+    cursor3.style.left = event.clientX + "px";
+    cursor3.style.top = event.clientY + "px";
+  });
+
+  function addHoverClass() {
+    cursor2.classList.add("hover");
+    cursor3.classList.add("hover");
+  }
+
+  function removeHoverClass() {
+    cursor2.classList.remove("hover");
+    cursor3.classList.remove("hover");
+  }
+
+  removeHoverClass();
+
+  const hoverTargets = document.querySelectorAll(".hover-target");
+  hoverTargets.forEach((target) => {
+    target.addEventListener("mouseover", addHoverClass);
+    target.addEventListener("mouseout", removeHoverClass);
+  });
+
+  // Navigation
+  const app = (() => {
+    let body, menu, menuItems;
+
+    function init() {
+      body = document.querySelector("body");
+      menu = document.querySelector(".menu-icon");
+      menuItems = document.querySelectorAll(".nav__list-item");
+      applyListeners();
+    }
+
+    function applyListeners() {
+      menu.addEventListener("click", () => {
+        toggleClass(body, "nav-active");
+      });
+    }
+
+    function toggleClass(element, stringClass) {
+      element.classList.toggle(stringClass);
+    }
+
+    init();
+  })();
+});
