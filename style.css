@@ -120,7 +120,6 @@ img {
 #modal.open {
   display: flex;
   opacity: 1;
-  transition: all .4s;
 }
 
 /* Fond flou qui prend tout l'écran */
