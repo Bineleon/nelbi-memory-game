@@ -25,8 +25,8 @@ let cardArray = [
   {
     name: 'Plongée',
     img: 'images/plongee.jpg',
-    description: '📸 prise à Hawaii lors d\'un séjour plongée.\nTitulaire du PADI Open Water, pratique la plongée depuis plusieurs années. 🐳',
-    description2:' '
+    description: '📸 prise à Hawaii lors d\'un séjour plongée.',
+    description2:'Titulaire du PADI Open Water, je pratique la plongée depuis plusieurs années. 🐳'
   }
   ,
   {
@@ -61,7 +61,7 @@ let cardArray = [
     name: 'Vélo',
     img: 'images/Velo.jpg',
     description: 'Le vélo, c\'est tout les jours, qu\'il vente ou qu\'il pleuve, court trajet, long trajet .',
-    description2:'🚴🏼‍♀️'
+    description2:'🚴🏼‍♀️ 🚀'
   }
   ,
   {
@@ -74,7 +74,7 @@ let cardArray = [
   {
     name: 'Humour & 2nd degré',
     img: 'images/Humour.jpg',
-    description: 'ERREUR 500',
+    description: 'ERREUR 404',
     description2:' '
   }
   ,
@@ -99,7 +99,7 @@ let listArray = [
       name: 'Plongée',
       img: 'images/plongee.jpg',
       description: '📸 prise à Hawaii lors d\'un séjour plongée.',
-      description2:'Titulaire du PADI Open Water, pratique la plongée depuis plusieurs années. 🐳'
+      description2:'Titulaire du PADI Open Water, je pratique la plongée depuis plusieurs années. 🐳'
     }
     ,
     {
@@ -133,8 +133,8 @@ let listArray = [
     {
       name: 'Vélo',
       img: 'images/velo.jpg',
-      description: 'Le vélo, c\'est tout les jours, qu\'il vente ou qu\'il pleuve, court trajet, long trajet .\n🚴🏼‍♀️',
-      description2:' '
+      description: 'Le vélo, c\'est tout les jours, qu\'il vente ou qu\'il pleuve, court trajet, long trajet .',
+      description2:'🚴🏼‍♀️ 🚀'
     }
     ,
     {
@@ -147,7 +147,7 @@ let listArray = [
     {
       name: 'Humour & 2nd degré',
       img: 'images/humour.jpg',
-      description: 'ERREUR 500',
+      description: 'ERREUR 404',
       description2:' '
     }
     ,
@@ -161,14 +161,14 @@ let listArray = [
     {
       name: 'Montagne',
       img: 'images/montagne.jpg',
-      description: '📸 prise en randonnée dans les Pyrénées Oriantales.\nLa montagne, ça vous gagne 🤓',
-      description2:' '
+      description: '📸 prise en randonnée dans les Pyrénées Oriantales.',
+      description2:'La montagne, ça vous gagne 🤓'
     }
     ,
     {
       name: 'Soudure',
       img: 'images/soudure.jpg',
-      description: 'Soudure de précision au PUK pour la fabrication de petit soclage',
+      description: 'Soudure de précision au \'PUK\' pour la fabrication de petit soclage',
       description2:' '
     }
     ,
@@ -176,43 +176,43 @@ let listArray = [
     {
       name: 'Aventure & Voyages',
       img: 'images/vallee_des_temples.jpg',
-      description: 'On aime l\'aventure et les voyages !\n📸prise à la vallée des temples en Sicile',
-      description2:' '
+      description: 'On aime l\'aventure et les voyages !',
+      description2:'📸 prise à la vallée des temples en Sicile'
     }
     ,
     {
       name: 'Aïnu',
       img: 'images/ainu.jpg',
-      description: 'Article paru dans le magazine \'The Good Life magazine\', 📸 prise au Musée Carnavalet lors de l\’installation de la collection permanente.',
-      description2:' '
+      description: 'Article paru dans le magazine \'The Good Life magazine\'',
+      description2:'📸 prise au Musée Carnavalet lors de l\’installation de la collection permanente.'
     }
     ,
     {
       name: 'AutoCAD',
       img: 'images/autoCAD.jpg',
-      description: 'Plan d\'un meuble à rideau coulissant dessiné sur le logiciel de CAO/DAO Autocad',
+      description: 'Plan d\'un meuble dessiné sur le logiciel de CAO/DAO Autocad',
       description2:' '
     }
     ,
     {
       name: 'Banjo',
       img: 'images/banjo.jpg',
-      description: 'Adore la musique (🎶électronique, rock, jazz,...🎶)',
-      description2:' '
+      description: ' Passionée de musique !',
+      description2:'(🎶électronique, rock, jazz,...🎶)'
     }
     ,
     {
       name: 'Dessin bureau Art Déco',
       img: 'images/dessin_bureau.jpg',
-      description: 'Apprentissage, pour les diplômes d\'ébenisterie, du dessin, peinture et perspective ainsi que l\'histoire de l\'art et des styles.\nDessin au feutre et aquarelle d\'un \'Bureau de dames\'\nstyle Art Déco.',
-      description2:' '
+      description: 'Apprentissage, pour les diplômes d\'ébenisterie, du dessin, peinture et perspective ainsi que l\'histoire de l\'art et des styles.',
+      description2:' Dessin au feutre et aquarelle d\'un bureau de style Art Déco '
     }
     ,
     {
       name: 'Polyglotte',
       img: 'images/polyglotte.jpg',
-      description: '\'Un esprit enfermé dans la langue est en prison.\'\n\n~ Simone Weil',
-      description2:' '
+      description: '\'Un esprit enfermé dans la langue est en prison.',
+      description2:'- Simone Weil -'
 
     }
   ]
