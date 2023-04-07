@@ -26,7 +26,7 @@ let cardArray = [
     name: 'Plongée',
     img: 'images/plongee.jpg',
     description: '📸 prise à Hawaii lors d\'un séjour plongée.',
-    description2:'Titulaire du PADI Open Water, je pratique la plongée depuis plusieurs années. 🐳'
+    description2:'Pratique la plongée depuis plusieurs années. 🐳'
   }
   ,
   {
@@ -99,7 +99,7 @@ let listArray = [
       name: 'Plongée',
       img: 'images/plongee.jpg',
       description: '📸 prise à Hawaii lors d\'un séjour plongée.',
-      description2:'Titulaire du PADI Open Water, je pratique la plongée depuis plusieurs années. 🐳'
+      description2:'Pratique la plongée depuis plusieurs années. 🐳'
     }
     ,
     {
