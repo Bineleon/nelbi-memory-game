@@ -19,6 +19,23 @@
   padding: 0 15px;
 }
 
+.switch-wrap span {
+  color: white;
+  position: relative;
+}
+
+.switch-wrap span::after {
+  content: "";
+  position: absolute;
+  bottom: 45%;
+  left: -3px;
+  right: 0;
+  height: 4px;
+  background-color: #8167a9;
+  margin: auto;
+  width: 104%;
+}
+
 p {
   font-family: 'Montserrat', sans-serif;
   color: black;
