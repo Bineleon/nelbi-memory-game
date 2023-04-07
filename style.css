@@ -189,60 +189,6 @@ img {
   text-decoration: underline;
 }
 
-
-
-
-.leftright {
-  height: 2px;
-  width: 30px;
-  position: absolute;
-  margin-top: 20px;
-  background-color: white;
-  border-radius: 2px;
-  transform: rotate(45deg);
-  transition: all .3s ease-in;
-}
-
-.rightleft {
-  height: 2px;
-  width: 30px;
-  position: absolute;
-  margin-top: 20px;
-  background-color: white;
-  border-radius: 2px;
-  transform: rotate(-45deg);
-  transition: all .3s ease-in;
-}
-
-label {
-  color: black;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: .4em;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  transition: all .3s ease-in;
-  opacity: 0;
-}
-
-.close {
-  margin: 30px 0 0 -13px;
-  position: absolute;
-}
-
-.close-container:hover .leftright {
-  transform: rotate(-45deg);
-  background-color: rgb(219, 92, 92);
-}
-
-.close-container:hover .rightleft {
-  transform: rotate(45deg);
-  background-color: rgb(219, 92, 92);
-}
-
-.close-container:hover label {
-  opacity: 1;
-}
-
 /* Image */
 #modal-img {
   width: 100%;
@@ -361,10 +307,6 @@ label {
     line-height: 1.4;
   }
 
-  .close-container {
-    top: 24%;
-    right: 47%;
-  }
   }
 
 
