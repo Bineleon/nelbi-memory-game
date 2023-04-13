@@ -41,7 +41,6 @@ p {
   color: black;
   font-size: 1.2rem;
   line-height: 1.5;
-  margin-bottom: 1rem;
 }
 
 /* Grid */
@@ -179,15 +178,6 @@ img {
   margin-top: 50px;
 }
 
-/* Bouton de fermeture en haut à droite */
-.close-container {
-  position: absolute;
-  cursor: pointer;
-  bottom: 0px;
-  font-size: 12px;
-  font-weight: 500;
-  text-decoration: underline;
-}
 
 /* Image */
 #modal-img {
@@ -199,153 +189,42 @@ img {
 
 /* Titre et description */
 #modal-title,
-#modal-description
+#modal-description,
 #modal-description2 {
   text-align: center;
-  margin: 0;
 }
 
 /* Titre */
 #modal-title {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 600;
   margin-bottom: 1rem;
   border-bottom: 1px solid black;
-  padding-bottom: 0.8rem;
+  padding-bottom: 0;
 }
 
 /* Description */
-#modal-description {
-  font-size: 1rem;
-  line-height: 1.4;
-  text-align: center;
-}
+#modal-description,
 #modal-description2 {
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.4;
   text-align: center;
 }
 
-
-
-@font-face {
-  font-family: 'Fligen';
-  src: url('Fligen-Regular.woff2') format('woff2'),
-      url('Fligen-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+#modal-description {
+  padding-bottom: 0;
 }
 
-/* Navbar */
-
-
-
-
-/* Media query pour les petis écrans */
-@media screen and (max-width: 600px) {
-  #memory-game {
-    grid-gap: 5px;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  .button {
-    font-size: 13px;
-    padding: 0.3rem 0.3rem;
-    margin: 9px;
-  }
-
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 2rem 0;
-  }
-
-  .modal {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    width: 100%;
-    height: 125%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 999;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal-content {
-    position: relative;
-    background-color: white;
-    width: 80%;
-    max-width: 500px;
-    margin-top: 10rem;
-    padding: 2rem;
-    box-shadow:
-    7px 8px 0 0 black, /* inner border */
-    11px 12px 0px 0px white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  #modal-title {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-
-  #modal-description {
-    font-size: 0.8rem;
-    line-height: 1.4;
-  }
-  #modal-description2 {
-    font-size: 0.8rem;
-    line-height: 1.4;
-  }
-
-  }
-
-
-/* Media query pour les écrans moyens */
-@media screen and (min-width: 601px) and (max-width: 900px) {
-  #memory-game {
-    grid-gap: 10px;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  .button {
-    font-size: 16px;
-    padding: 10px;
-    margin: 5px;
-  }
+#modal-description2 {
+  padding-bottom: 40px;
 }
 
-/* Media query pour les grands écrans */
-@media screen and (min-width: 901px) {
-  #memory-game {
-    grid-gap: 15px;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  .button {
-    font-size: 18px;
-    padding: 12px;
-    margin: 7px;
-  }
+.close-container {
+  position: absolute;
+  cursor: pointer;
+  bottom: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: underline;
+  padding-bottom: 10px;
 }
