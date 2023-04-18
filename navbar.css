@@ -384,7 +384,7 @@ a {
 
 .switch-wrap {
 	position: absolute;
-  bottom: 60px; /* Changez cette valeur pour réduire l'espace vide */
+  bottom: 20%;
 	left: 0;
 	z-index: 10;
   transform: translateY(-50%);
@@ -411,23 +411,7 @@ a {
 
 .switch-wrap h1:hover {
   color: #fff;
-  text-decoration: line-through #8167a9 4px;
-/* text-shadow:  0 1px 0px black,
-              1px 0 0px black,
-              1px 2px 1px #89a163,
-              2px 1px 1px #89a163,
-              2px 3px 2px #89a163,
-              3px 2px 2px #89a163,
-              3px 4px 2px #89a163,
-              4px 3px 3px #89a163,
-              4px 5px 3px #89a163,
-              5px 4px 2px #89a163,
-              5px 6px 2px #89a163,
-              6px 5px 2px #89a163,
-              6px 7px 1px #89a163,
-              7px 6px 1px #89a163,
-              7px 8px 0px #89a163,
-              8px 7px 0px #89a163; */
+  text-decoration: line-through #8167a9 5px;
 }
 
 @media screen and (max-width: 580px){
@@ -436,15 +420,20 @@ a {
   }
 }
 .switch-wrap p {
-	font-weight: 600;
-	font-size: 14px;
-	letter-spacing: 1px;
-	line-height: 1;
-	color: #8167a9;
-	text-align: justify;
-	margin-top: 15px;
-  margin-left: 18%;
-  margin-right: 18%;
+  background-color: white;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: black;
+  text-align: justify;
+  margin-top: 15px;
+  margin-left: 14%;
+  margin-right: 14%;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 5px 6px 0 0 black, 8px 9px 0px 0px white;
 }
 .switch-wrap p span {
 	position: relative;
