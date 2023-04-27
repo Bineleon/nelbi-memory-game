@@ -74,6 +74,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10%;
 }
 
 .over-hide{
@@ -486,4 +487,12 @@ a {
 .switched #circle {
 	left: 43px;
 	background: #000;
+}
+
+.vertical-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
