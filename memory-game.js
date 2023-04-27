@@ -1,7 +1,7 @@
 const bonus = [
   {
     name: 'BONUS, vous avez trouvé toute les pairs',
-    img: '/images/arbre_nelbi.jpg',
+    img: 'images/arbre_nelbi.jpg',
     description: 'D\'où vient le prénom Nelbi ? C\'est à l\'origine le nom d\'un arbre sacré pour une tribu (les Peuls) au Mali. Il y a trois sortes de Nelbi : le Nelbi d\'eau, le Nelbi de terre et le Nelbi de nulle part 🤓',
     description2:' '
 
@@ -10,70 +10,70 @@ const bonus = [
 let cardArray = [
   {
     name: 'Esprit d\'equipe',
-    img: '/images/Esprit_d_equipe.jpg',
+    img: 'images/esprit_d_equipe.jpg',
     description: '\'Il y a plus d\'idées dans deux têtes que dans une\' ',
     description2:'- Jaques Chirac -'
   }
   ,
   {
     name: 'Persévérance',
-    img: '/images/Perseverance.jpg',
+    img: 'images/perseverance.jpg',
     description: 'En persévérant on arrive à tout.',
     description2:' '
   }
   ,
   {
     name: 'Plongée',
-    img: '/images/plongee.jpg',
+    img: 'images/plongee.jpg',
     description: '📸 prise à Hawaii lors d\'un séjour plongée.',
     description2:'Pratique la plongée depuis plusieurs années. 🐳'
   }
   ,
   {
     name: 'Porte bijoux',
-    img: '/images/Porte_bijoux.jpg',
+    img: 'images/porte_bijoux.jpg',
     description: 'Porte-bijou en laiton conçu dans la tête et fabriqué...à la main 🤌',
     description2:' '
   }
   ,
   {
     name: 'Resolution de probleme',
-    img: '/images/Resolution_de_probleme.jpg',
+    img: 'images/resolution_de_probleme.jpg',
     description: 'Quand un problème se présente, il est transformé en défi à relever. 🔧🧩',
     description2:' '
   }
   ,
   {
     name: 'Polyglotte',
-    img: '/images/polyglotte.jpg',
+    img: 'images/polyglotte.jpg',
     description: '\'Un esprit enfermé dans la langue est en prison.\' ',
     description2:'- Simone Weil -'
   }
   ,
   {
     name: 'Squelette de baleine',
-    img: '/images/Squelette_baleine.jpg',
+    img: 'images/squelette_baleine.jpg',
     description: '📸 prise lors du soclage d\'un squelette de baleine (actuellement exposé au Musée des Confluences, à Lyon)',
     description2:' '
   }
   ,
   {
     name: 'Vélo',
-    img: '/images/Velo.jpg',
+    img: 'images/velo.webp',
     description: 'Le vélo, c\'est tout les jours, qu\'il vente ou qu\'il pleuve, court trajet, long trajet .',
     description2:'🚴🏼‍♀️ 🚀'
   }
   ,
   {
     name: 'Yoga',
-    img: '/images/Yoga.jpg',
+    img: 'images/yoga.jpg',
     description: 'Titulaire d\'un Teacher Training de 75H et pratique le yoga plusieurs fois par semaine 🧘‍♀️🤸‍♀️',
     description2:' '
   }
   ,
   {
     name: 'Humour & 2nd degré',
-    img: '/images/Humour.jpg',
+    img: 'images/humour.jpg',
     description: 'ERREUR 404',
     description2:' '
   }
@@ -83,91 +83,91 @@ let cardArray = [
 let listArray = [
     {
       name: 'Esprit d\'équipe',
-      img: '/images/esprit_d_equipe.jpg',
+      img: 'images/esprit_d_equipe.jpg',
       description: '\'Il y a plus d\'idées dans deux têtes que dans une\' ',
       description2:'- Jaques Chirac -'
     }
     ,
     {
       name: 'Persévérance',
-      img: '/images/perseverance.jpg',
+      img: 'images/perseverance.jpg',
       description: 'En persévérant, on arrive à tout ! 🤓 ',
       description2:' '
     }
     ,
     {
       name: 'Plongée',
-      img: '/images/plongee.jpg',
+      img: 'images/plongee.jpg',
       description: '📸 prise à Hawaii lors d\'un séjour plongée.',
       description2:'Pratique la plongée depuis plusieurs années. 🐳'
     }
     ,
     {
       name: 'Porte bijoux',
-      img: '/images/porte_bijoux.jpg',
+      img: 'images/porte_bijoux.jpg',
       description: 'Porte-bijou en laiton conçu dans la tête, et fabriqué...à la main 🤌',
       description2:' '
     }
     ,
     {
       name: 'Résolution de problème',
-      img: '/images/resolution_de_probleme.jpg',
+      img: 'images/resolution_de_probleme.jpg',
       description: 'Quand un problème se présente, il est transformé en défi à relever. 🔧 🧩',
       description2:' '
     }
     ,
     {
       name: 'Sens de l\'optimisation',
-      img: '/images/sens_de_loptimisation.jpg',
+      img: 'images/sens_de_loptimisation.jpg',
       description: 'Toujours à la recherche de la meilleure solution, l\'optimisation est mon leitmotiv. 💪 🚀',
       description2:' '
     }
     ,
     {
       name: 'Squelette de baleine',
-      img: '/images/squelette_baleine.jpg',
+      img: 'images/squelette_baleine.jpg',
       description: '📸 prise lors du soclage d\'un squelette de baleine (actuellement exposé au Musée des Confluences, à Lyon)',
       description2:' '
     }
     ,
     {
       name: 'Vélo',
-      img: '/images/velo.jpg',
+      img: 'images/velo.webp',
       description: 'Le vélo, c\'est tout les jours, qu\'il vente ou qu\'il pleuve, court trajet, long trajet .',
       description2:'🚴🏼‍♀️ 🚀'
     }
     ,
     {
       name: 'Yoga',
-      img: '/images/yoga.jpg',
+      img: 'images/yoga.jpg',
       description: 'Titulaire d\'un Teacher Training de 75H et pratique le yoga plusieurs fois par semaine 🧘‍♀️🤸‍♀️',
       description2:' '
     }
     ,
     {
       name: 'Humour & 2nd degré',
-      img: '/images/humour.jpg',
+      img: 'images/humour.jpg',
       description: 'ERREUR 404',
       description2:' '
     }
     ,
     {
       name: 'Louvre Abu Dhabi',
-      img: '/images/LAD.jpg',
+      img: 'images/LAD.jpg',
       description: '📸 du musée du Louvre Abu Dhabi prise lors d\'un chantier de soclage pour l\'exposition \'Dragons et phéonix\' ',
       description2:' '
     }
     ,
     {
       name: 'Montagne',
-      img: '/images/montagne.jpg',
+      img: 'images/montagne.jpg',
       description: '📸 prise en randonnée dans les Pyrénées Oriantales.',
       description2:'La montagne, ça vous gagne 🤓'
     }
     ,
     {
       name: 'Soudure',
-      img: '/images/soudure.jpg',
+      img: 'images/soudure.jpg',
       description: 'Soudure de précision au \'PUK\' pour la fabrication de petit soclage',
       description2:' '
     }
@@ -175,42 +175,42 @@ let listArray = [
 
     {
       name: 'Aventure & Voyages',
-      img: '/images/vallee_des_temples.jpg',
+      img: 'images/vallee_des_temples.jpg',
       description: 'On aime l\'aventure et les voyages !',
       description2:'📸 prise à la vallée des temples en Sicile'
     }
     ,
     {
       name: 'Aïnu',
-      img: '/images/ainu.jpg',
+      img: 'images/ainu.jpg',
       description: 'Article paru dans le magazine \'The Good Life magazine\'',
       description2:'📸 prise au Musée Carnavalet lors de l\’installation de la collection permanente.'
     }
     ,
     {
       name: 'AutoCAD',
-      img: '/images/autoCAD.jpg',
+      img: 'images/autoCAD.jpg',
       description: 'Plan d\'un meuble dessiné sur le logiciel de CAO/DAO Autocad',
       description2:' '
     }
     ,
     {
       name: 'Banjo',
-      img: '/images/banjo.jpg',
+      img: 'images/banjo.jpg',
       description: ' Passionée de musique !',
       description2:'(🎶électronique, rock, jazz,...🎶)'
     }
     ,
     {
       name: 'Dessin bureau Art Déco',
-      img: '/images/dessin_bureau.jpg',
+      img: 'images/dessin_bureau.jpg',
       description: 'Apprentissage, pour les diplômes d\'ébenisterie, du dessin, peinture et perspective ainsi que l\'histoire de l\'art et des styles.',
       description2:' Dessin au feutre et aquarelle d\'un bureau de style Art Déco '
     }
     ,
     {
       name: 'Polyglotte',
-      img: '/images/polyglotte.jpg',
+      img: 'images/polyglotte.jpg',
       description: '\'Un esprit enfermé dans la langue est en prison.',
       description2:'- Simone Weil -'
 
