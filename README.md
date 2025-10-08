@@ -30,23 +30,6 @@ L’objectif était de **mettre en pratique les bases du DOM**, de **gérer les 
 
 ---
 
-## 🕹️ Utilisation
-
-Cliquez sur les cartes pour révéler les paires.  
-Le jeu se termine lorsque toutes les cartes sont retournées.  
----
-
-## 📁 Structure du projet
-
-```
-nelbi-memory-game/
-├── index.html        # Structure principale du jeu
-├── style.css         # Styles et animations
-└── script.js         # Logique du jeu (JavaScript pur)
-```
-
----
-
 ## 💡 Notes
 
 Ce projet fait partie de mes **tout premiers essais personnels en JavaScript**, réalisés avant de rejoindre **l'École 42**.
@@ -57,4 +40,5 @@ Ce projet fait partie de mes **tout premiers essais personnels en JavaScript**, 
 
 **Nelbi Leon**  
 42 Paris | [GitHub](https://github.com/Bineleon)
+
 🌐 [nelbi-memory-game.vercel.app](https://nelbi-memory-game.vercel.app)
