@@ -39,5 +39,7 @@ Ce projet fait partie de mes **tout premiers essais personnels en JavaScript**, 
 ## 🧩 Auteur
 
 **Nelbi Leon**  
+
 42 Paris | [GitHub](https://github.com/Bineleon)
+
 🌐 [nelbi-memory-game.vercel.app](https://nelbi-memory-game.vercel.app)
